@@ -1,0 +1,14 @@
+{
+    "title": "Root Schema",
+    "description": "The root schema is the schema that comprises the entire JSON document.",
+    "type": "object",
+    "required": [
+        "message"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "message": {
+            "type": "string"
+        }
+    }
+}

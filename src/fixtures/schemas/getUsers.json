@@ -1,0 +1,116 @@
+{
+    "title": "Root Schema",
+    "description": "The root schema is the schema that comprises the entire JSON document.",
+    "type": "object",
+    "default": {},
+    "required": [
+        "quantidade",
+        "usuarios"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "quantidade": {
+            "title": "The quantidade Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "usuarios": {
+            "title": "The usuarios Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "array",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "title": "A Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "default": {},
+                "required": [
+                    "nome",
+                    "email",
+                    "password",
+                    "administrador",
+                    "_id"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "nome": {
+                        "title": "The nome Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Fulano da Silva"
+                        ]
+                    },
+                    "email": {
+                        "title": "The email Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "beltrano@qa.com.br"
+                        ]
+                    },
+                    "password": {
+                        "title": "The password Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "teste"
+                        ]
+                    },
+                    "administrador": {
+                        "title": "The administrador Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "true"
+                        ]
+                    },
+                    "_id": {
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "0uxuPY0cbmQhpEz1"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "nome": "Fulano da Silva",
+                    "email": "beltrano@qa.com.br",
+                    "password": "teste",
+                    "administrador": "true",
+                    "_id": "0uxuPY0cbmQhpEz1"
+                }]
+            },
+            "examples": [
+                [{
+                    "nome": "Fulano da Silva",
+                    "email": "beltrano@qa.com.br",
+                    "password": "teste",
+                    "administrador": "true",
+                    "_id": "0uxuPY0cbmQhpEz1"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "quantidade": 1,
+        "usuarios": [{
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }]
+    }]
+}
