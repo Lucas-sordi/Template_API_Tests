@@ -1,0 +1,68 @@
+{
+    "title": "Root Schema",
+    "description": "The root schema is the schema that comprises the entire JSON document.",
+    "type": "object",
+    "default": {},
+    "required": [
+        "nome",
+        "email",
+        "password",
+        "administrador",
+        "_id"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "nome": {
+            "title": "The nome Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Fulano da Silva"
+            ]
+        },
+        "email": {
+            "title": "The email Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "beltrano@com.br"
+            ]
+        },
+        "password": {
+            "title": "The password Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "teste"
+            ]
+        },
+        "administrador": {
+            "title": "The administrador Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "true"
+            ]
+        },
+        "_id": {
+            "title": "The _id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "0uxuPY0cbmQhpEz1"
+            ]
+        }
+    },
+    "examples": [{
+        "nome": "Fulano da Silva",
+        "email": "beltrano@com.br",
+        "password": "teste",
+        "administrador": "true",
+        "_id": "0uxuPY0cbmQhpEz1"
+    }]
+}
