@@ -1,4 +1,4 @@
-# Template_API_Tests
+# Jest_Supertest_Arch_Template
 
 Template base para criar testes automatizados de API com Node, Jest e Supertest.
 ##
