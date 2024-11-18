@@ -10,9 +10,15 @@ export default {
   "testPathIgnorePatterns": ["<rootDir>/node_modules", "<rootDir>/out"],
   "testEnvironment": "node",
   "setupFiles": [
-      `<rootDir>/src/config/${target}.js` //
+      `<rootDir>/src/config/${target}.js`
   ],
   "transform": {
     "^.+\\.js$": "babel-jest"
-  }
+  },
+  "reporters": [
+    "default",
+    ["jest-html-reporters", {
+      "filename": "report.html"
+    }]
+  ],
 }
